@@ -34,6 +34,20 @@ function addProject(event) {
     renderProject()
 }
 
+function getTime(startDate, endDate){
+    if(startDate[5] == 0){startDate = startDate[6]} else {startDate = startDate[5]+startDate[6]}
+    if(endDate[5] == 0){endDate = endDate[6]}else{endDate = endDate[5]+endDate[6]}
+
+    const startMonth = Number(startDate);
+    const endMonth = Number(endDate);
+
+    const duration = endMonth - startMonth
+
+    if(duration === 0) return "<1 month"
+
+    return endMonth - startMonth + " " + "month"
+}
+
 function renderProject() {
     document.getElementById('listProject').innerHTML = ``
 
@@ -79,16 +93,4 @@ function renderProject() {
 
 }
 
-function getTime(startDate, endDate){
-    if(startDate[5] == 0){startDate = startDate[6]} else {startDate = startDate[5]+startDate[6]}
-    if(endDate[5] == 0){endDate = endDate[6]}else{endDate = endDate[5]+endDate[6]}
 
-    const startMonth = Number(startDate);
-    const endMonth = Number(endDate);
-
-    const duration = endMonth - startMonth
-
-    if(duration === 0) return "<1 month"
-
-    return endMonth - startMonth + " " + "month"
-}
