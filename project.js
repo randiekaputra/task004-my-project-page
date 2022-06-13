@@ -35,45 +35,7 @@ function addProject(event) {
 }
 
 function renderProject() {
-    document.getElementById('listProject').innerHTML =
-    `
-        <div class="project-list-item">
-            <div class="project-image">
-                <img src="assets/pic/earth-uranus.jpg" alt="">
-            </div>
-            <div class="project-content">
-                <h2>
-                    <a href="project-detail.html" target="_blank">
-                        63 Earths Can Fit Inside Uranus
-                    </a>
-                </h2>
-                <div class="duration-project">
-                    <p>Duration: <span>1 Month</span></p>
-                </div>
-                <div class="description-project">
-                    <p>
-                    he joke here starts off with text that says “63 earths can fit
-                    inside Uranus.” Now all this is saying is that the planet,
-                    Uranus, is 63 times larger than the earth so the earth could be
-                    fit into Uranus 63 times.
-                    </p>
-                </div>
-                <div class="tech-project">
-                    <i class="fa-brands fa-node-js"></i>
-                    <i class="fa-brands fa-js"></i>
-                    <i class="fa-brands fa-html5"></i>
-                </div>
-                <div class="btn-group">
-                    <div class="btn-left">
-                        <button>Edit</button>
-                    </div>
-                    <div class="btn-right">
-                        <button class="del-btn">Delete</button>
-                    </div>
-                </div>
-            </div>
-        </div>   
-    `
+    document.getElementById('listProject').innerHTML = ``
 
     for(let i = 0; i < dataProject.length; i++){
         document.getElementById('listProject').innerHTML += 

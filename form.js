@@ -14,7 +14,7 @@ function submitData(){
         return alert("Email is required ☹")
     } else if(phone == ''){
         return alert("Phone Number is required ☹")
-    } else if(subject == ''){
+    } else if(subject == 'select'){
         return alert("Subject is required ☹")
     } else if(message == ''){
         return alert("Your Message is required ☹")

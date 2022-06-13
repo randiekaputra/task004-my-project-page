@@ -328,7 +328,7 @@ input, textarea, .checkmark, .project-form .project-container .file .input-image
 .project-image img{
   width: 100%;
   object-fit: cover;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
   border-radius: 12px;
   -webkit-border-radius: 12px;
   -moz-border-radius: 12px;
@@ -336,36 +336,40 @@ input, textarea, .checkmark, .project-form .project-container .file .input-image
   -o-border-radius: 12px;
 }
 
-.project-content{
+/* .project-content{
   flex: 2;
-}
+} */
 
 .project-content h2 a{
   text-decoration: none;
   color: black;
-  padding-top: 5px;
+  padding-bottom: 15px;
 }
 
-.project-content .description{
-  padding: 32px;
+.description-project p{
+  padding-top: 10px;
 }
 
-.project-content .description p{
+.duration-project{
+  padding-top: 10px;
+}
+
+/* .project-content .description p{
   word-break: break-all;
-}
+} */
 
 .project-content .tech-project{
   margin-bottom: 12px;
 }
 
 .project-content .tech-project i{
-  font-size: 24px;
-  padding-right: 12px;
-  font-weight: 500;
+  font-size: 17px;
+  padding-right: 10px;
+  padding-top: 10px;
 }
 
 .project-content .btn-group{
-  margin-top: 28px;
+  margin-top: 15px;
   display: flex;
   font-size: 17px;
   font-weight: 400;
